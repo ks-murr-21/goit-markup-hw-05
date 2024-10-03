@@ -691,7 +691,6 @@ img {
 /* ==================== / FOOTER STYLES ==================== */
 
 /* ==================== / BACKDROP STYLES ==================== */
-/* ==================== / BACKDROP STYLES ==================== */
 
 .backdrop {
   position: fixed;
@@ -737,3 +736,204 @@ img {
 .backdrop:not(.is-open) .modal {
   transform: translate(-50%, -50%) scale(1.5);
 }
+
+/* ==================== / BACKDROP STYLES ==================== */
+
+/* ==================== / MODAl STYLES ==================== */
+
+.modal-btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  fill: #2e2f42;
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
+  background-color: #e7e9fc;
+
+  border: 1px solid rgba(0, 0, 0, 1);
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding: 0;
+  cursor: pointer;
+
+  position: absolute;
+  top: 24px;
+  right: 24px;
+
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
+}
+
+.modal-btn-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  top: 72px;
+}
+
+.modal-form {
+  margin-top: 112px;
+  margin-left: 24px;
+  margin-right: 24px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+
+  border-radius: 4px;
+  width: 360px;
+  height: 336px;
+}
+
+.modal-div {
+}
+
+.form-item {
+  width: 360px;
+  height: 58px;
+  margin-bottom: 8px;
+}
+
+.form-label {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-bottom: 4px;
+}
+
+.form-label-item {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.form-input {
+  padding-left: 38px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus {
+  border-color: #4d5ae5;
+}
+
+.form-input:focus + .modal-icon {
+  fill: #4d5ae5;
+}
+
+.modal-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #2e2f42;
+}
+
+.label-textarea {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-bottom: 4px;
+}
+
+.text-area {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+
+  width: 360px;
+  height: 120px;
+  resize: none;
+
+  padding: 8px 16px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.privacy-policy {
+}
+
+.send {
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
+
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  display: block;
+  cursor: pointer;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 4px;
+
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.send:hover,
+.send:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #404bbf;
+  cursor: pointer;
+}
+/* ==================== / MODAl STYLES ==================== */
