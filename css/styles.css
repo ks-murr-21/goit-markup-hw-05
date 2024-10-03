@@ -802,7 +802,9 @@ img {
   height: 336px;
 }
 
-.form-items {
+.form-name,
+.form-tel,
+.form-email {
   width: 360px;
   height: 58px;
   margin-bottom: 8px;
