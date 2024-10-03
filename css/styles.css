@@ -802,8 +802,18 @@ img {
   height: 336px;
 }
 
-.form-name,
-.form-tel,
+.form-name {
+  width: 360px;
+  height: 58px;
+  margin-bottom: 8px;
+}
+
+.form-tel {
+  width: 360px;
+  height: 58px;
+  margin-bottom: 8px;
+}
+
 .form-email {
   width: 360px;
   height: 58px;
@@ -821,7 +831,17 @@ img {
   display: block;
 }
 
-.form-label-item {
+.form-label-name {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.form-label-tel {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.form-label-email {
   margin-bottom: 8px;
   position: relative;
 }
