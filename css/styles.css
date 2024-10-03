@@ -605,15 +605,60 @@ img {
   fill: #f4f4fd;
 }
 
-.subscribe {
-  margin-left: auto;
-  width: 453px;
-  height: 80px;
-}
+/* ==================== / STYLES ==================== */
 
 .forma {
   display: flex;
   gap: 24px;
+}
+
+.footer-email {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  background-color: transparent;
+
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.footer-email::placeholder {
+  color: #fff;
+}
+.mail {
+  background-color: transparent;
+}
+
+.footer-btn {
+  max-width: 165px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+
+  border: none;
+  border-radius: 4px;
+  padding: 8px 24px;
+}
+
+.subscribe {
+  margin-left: auto;
+  width: 453px;
+  height: 80px;
 }
 
 .subscribe-text {
@@ -626,59 +671,8 @@ img {
   margin-bottom: 16px;
 }
 
-.subscribe-list {
-  display: flex;
-  gap: 16px;
-}
-
-.footer-input::placeholder {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
-  color: #fff;
-  padding-left: 16px;
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-
-.footer-input {
-  border: 1px solid #fff;
-  border-radius: 4px;
-  width: 264px;
-  height: 40px;
-  background-color: #2e2f42;
-}
-
-.footer-btn-text {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  text-align: center;
-  color: #fff;
-}
-
-.footer-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 16px;
-
-  border-radius: 4px;
-  padding: 8px 24xpx;
-  width: 165px;
-  height: 40px;
-
-  background: #4d5ae5;
-}
-
 .btn-icon {
-  fill: #fff;
-  margin-left: 16p;
+  margin-left: 16px;
 }
 
 .footer-btn:hover,
@@ -705,8 +699,8 @@ img {
   visibility: visible;
   pointer-events: none;
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) visibility 250ms
-    cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-open {
@@ -719,6 +713,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 72px 24px 24px 24px;
 
   width: 408px;
   min-height: 584px;
