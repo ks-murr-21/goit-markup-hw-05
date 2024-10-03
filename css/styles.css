@@ -933,7 +933,7 @@ img {
   color: #8e8f99;
 }
 
-.input-checkbox:checked + .label-span{
+.input-checkbox:checked+.form-label>.label-span{
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
@@ -947,10 +947,8 @@ img {
   padding: 16px 32px;
   min-width: 169px;
   height: 56px;
-
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
