@@ -808,18 +808,6 @@ img {
   margin-bottom: 8px;
 }
 
-.form-tel {
-  width: 360px;
-  height: 58px;
-  margin-bottom: 8px;
-}
-
-.form-email {
-  width: 360px;
-  height: 58px;
-  margin-bottom: 8px;
-}
-
 .form-label {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -831,20 +819,11 @@ img {
   display: block;
 }
 
-.form-label-name {
+.form-label-item {
   margin-bottom: 8px;
   position: relative;
 }
 
-.form-label-tel {
-  margin-bottom: 8px;
-  position: relative;
-}
-
-.form-label-email {
-  margin-bottom: 8px;
-  position: relative;
-}
 
 .form-input {
   width: 100%;
@@ -920,9 +899,19 @@ img {
   margin-bottom: 24px;
 }
 
-.privacy-input {
-  visibility: hidden;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
+
 .label-span {
   width: 16px;
   height: 16px;
@@ -944,7 +933,7 @@ img {
   color: #8e8f99;
 }
 
-.privacy-input:checked + .pravicy-label > .label-span {
+.input-checkbox:checked + .label-span{
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
@@ -956,7 +945,7 @@ img {
 
 .send {
   padding: 16px 32px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
 
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);

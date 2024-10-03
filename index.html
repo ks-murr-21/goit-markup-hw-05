@@ -573,7 +573,7 @@
 
     <!-- Backdrop section -->
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-open" data-modal>
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-open>
           <svg class="modal-btn-icon" width="8" height="8">
@@ -586,7 +586,7 @@
         <form class="modal-form">
             <div class="form-name">
               <label class="form-label" for="user-name">Name</label>
-              <div class="form-label-name">
+              <div class="form-label-item">
                 <input
                   class="form-input"
                   type="text"
@@ -600,9 +600,9 @@
               </div>
             </div>
 
-              <div class="form-tel">
+              <div class="form-name">
               <label class="form-label" for="phone">Phone</label>
-              <div class="form-label-tel">
+              <div class="form-label-item">
                 <input
                   class="form-input"
                   type="tel"
@@ -616,9 +616,9 @@
               </div>
             </div>
 
-            <div class="form-email">
+            <div class="form-name">
               <label class="form-label" for="email">Email</label>
-              <div class="form-label-email">
+              <div class="form-label-item">
                 <input 
                 class="form-input" 
                 type="email" 
@@ -632,19 +632,20 @@
 
 
             <div class="form-item-textarea">
-              <label class="label-textarea" for="user-comment">Comment</label>
+              <label class="form-label" for="user-comment">Comment</label>
               <textarea 
               class="text-area"
               name="user-comment" 
-              id="usercomment" 
+              id="user-comment" 
               placeholder="Text input">
               </textarea>
               </div>
 
               <div class="privacy-policy">
                 <input 
-                class="privacy-input"
+                class="visually-hidden"
                 type="checkbox"
+                name="user-privacy"
                 id="user-privacy"
                 value="true">
 
