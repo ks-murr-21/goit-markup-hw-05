@@ -933,7 +933,7 @@ img {
   color: #8e8f99;
 }
 
-.input-checkbox:checked+.form-label>.label-span{
+.visually-hidden:checked + .privacy-label > .label-span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
